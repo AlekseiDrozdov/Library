@@ -39,5 +39,14 @@ public class Reader {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    @Override
+    public String toString() {
+        return "Reader{" 
+                + "\n firstname=" + firstname 
+                + ",\n lastname=" + lastname 
+                + ",\n phone=" + phone 
+                + "\n}";
+    }
     
 }

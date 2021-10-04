@@ -8,6 +8,9 @@ package myclasses;
 import entity.Reader;
 import entity.Book;
 import entity.Author;
+import entity.History;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  *
@@ -49,6 +52,17 @@ public class App {
         reader1.setFirstname("Ivan");
         reader1.setLastname("Ivanov");
         reader1.setPhone("4564545345");
+        
+        History history1 = new History();
+        history1.setBook(book1);
+        history1.setReader(reader1);
+        Calendar c = new GregorianCalendar();
+        history1.setGivenDate(c.getTime());
+        System.out.println("history1 = "+history1.toString());
+        System.out.println(" --------- ");
+        history1.setReturnDate(c.getTime());
+        System.out.println("history1 = "+history1.toString());
+        
     }
     
 }
