@@ -5,6 +5,10 @@
  */
 package myclasses;
 
+import entity.Reader;
+import entity.Book;
+import entity.Author;
+
 /**
  *
  * @author pupil
@@ -41,6 +45,10 @@ public class App {
         book2.setAuthor(authors2);
         book2.setPublishedYear(2007);
         
+        Reader reader1 = new Reader();
+        reader1.setFirstname("Ivan");
+        reader1.setLastname("Ivanov");
+        reader1.setPhone("4564545345");
     }
     
 }
