@@ -18,6 +18,21 @@ import java.util.Scanner;
  *
  * @author Melnikov
  */
+package myclasses;
+
+import entity.Reader;
+import entity.Book;
+import entity.Author;
+import entity.History;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Melnikov
+ */
 public class App {
     Scanner scanner = new Scanner(System.in);
     Book[] books = new Book[10];
@@ -119,7 +134,7 @@ public class App {
         book.setAuthor(authors);
         return book;
     }
-  }
+}
 //        System.out.println("Hello");
 //        Book book1 = new Book();
 //        book1.setCaption("Voina i Mir");
